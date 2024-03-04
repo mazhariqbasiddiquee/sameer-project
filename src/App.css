@@ -1,0 +1,183 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.home{
+  /* max-width: 1200px;
+  margin-inline: auto; */
+  padding: 2em 0 2em 2em;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+
+
+
+
+button{
+  width: fit-content;
+  padding: 0.6em 3em 0.6em 3em;
+  background-color: black;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:active{
+  transform: scale(0.96);
+}
+
+
+
+
+
+
+
+
+.details-container{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+}
+
+
+.details-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-weight: 700;
+  font-size: 20px;
+  padding: 10px;
+}
+
+.details-container>input{
+  width: 40%;
+  height: 35px;
+  padding-left: 0.5em ;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid black;
+  outline: none;
+}
+
+.cards-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
+  height: auto;
+  overflow: scroll;
+}
+
+.cards-container::-webkit-scrollbar{
+  display : none;
+
+}
+
+.cards{
+  border: 1px solid black;
+  width: 300px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 8px;
+  font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+/* Spinner */
+
+.container{
+  margin: 0;
+  padding: 0;
+  background-color: black;
+
+}
+
+.center{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.ring{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  animation: ring 2s linear infinite;
+}
+
+@keyframes ring{
+  0%{
+    transform: rotate(0deg);
+    box-shadow: 1px 5px 2px #e65c00;
+  }
+  50%{
+    transform: rotate(180deg);
+    box-shadow: 1px 5px 2px #18b201;
+  }
+  100%{
+    transform: rotate(360deg);
+    box-shadow: 1px 5px 2px #0456c8;
+  }
+}
+
+.ring:before{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 0 0 5px rgba(255,255,255,.3);
+}
+
+span{
+  color: #737373;
+  font-size: 20px ;
+  letter-spacing: 1px;
+  line-height: 200px;
+  animation: text 3s ease-in-out infinite;
+}
+
+
+
+input{
+  width: 40%;
+  height: 35px;
+  padding-left: 0.5em ;
+  font-size: 16px;
+  font-weight: 700;
+  border: 1px solid black;
+  outline: none;
+}
+
+input:focus{
+  border: 2px solid rgb(8, 54, 180);
+}
