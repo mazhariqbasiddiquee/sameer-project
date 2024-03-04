@@ -20,7 +20,7 @@ const PincodeForm = () => {
         return;
       }
       
-      dispatch(fetchPincodeDetails(pincodeNumber));
+      // dispatch(fetchPincodeDetails(pincodeNumber));
       navigate('navigation');
     };
   
